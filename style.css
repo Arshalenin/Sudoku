@@ -1,0 +1,100 @@
+body{
+    margin:0;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    background-color:gray;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sudoku-container
+{
+    background-color:yellowgreen;
+    width:500px;
+    height:800px;
+    padding:20px;
+    border-radius:5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.sudoku-header
+{
+  display:flex;
+  justify-content:center;
+}
+
+#errors
+{
+    color:red;
+}
+
+#board{
+    width:500px;
+    height:500px;
+    background-color:white;
+    display:flex;
+    flex-wrap:wrap;
+    cursor:pointer;
+    
+}
+
+.tile
+{
+    width:50px;
+    height: 50px;
+    border:1px solid gray;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.number
+{
+    width:50px;
+    height: 50px;
+    border:1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+
+}
+
+#digits{
+    width:500px;
+    height:50px;
+    background-color:pink;
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+.number-selected
+{
+ background-color:darkmagenta;
+
+}
+
+.tile-start
+{
+    background-color:whitesmoke;
+}
+
+.horizontal-line
+{
+    border-bottom: 2px solid black;
+}
+
+.vertical-line
+{
+    border-right:2px solid black;
+}
+
+
